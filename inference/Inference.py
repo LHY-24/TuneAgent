@@ -1,7 +1,7 @@
 import Config as C
 from ConfigTree import Config
 # from LLM import ChatContext
-from LLM_R1 import ChatContext
+from TuneAgentLLM import ChatContext
 import os
 import logging
 
@@ -57,6 +57,8 @@ def main():
         config_path=f"{args.path}/.config",
     )
     config.run()
+    output_dir = os.path.dirname(os.path.abspath(args.output))
+    os.makedirs(output_dir, exist_ok=True)
     config.save(args.output)
 
 

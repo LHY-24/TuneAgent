@@ -1,5 +1,5 @@
 import kconfiglib as klib
-import LLM_R1
+import TuneAgentLLM
 import logging
 from RAG import KnowledgeGenerator
 import Config as C
@@ -11,7 +11,7 @@ class Config:
     def __init__(
         self,
         kconfig_path: str,
-        chatter: LLM_R1.ChatContext,
+        chatter: TuneAgentLLM.ChatContext,
         target: str,
         kg_search_mode: str,
         use_knowledge: bool,

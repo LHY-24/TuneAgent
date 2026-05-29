@@ -6,3 +6,12 @@ ignore/
 checkpoints/
 .history/
 envs/
+*.pyc
+.pytest_cache/
+.DS_Store
+Config.log
+QA.log
+QA_*.log
+*.log
+config_output
+outputs/
